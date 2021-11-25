@@ -1,0 +1,197 @@
+//color variables
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$bright-blue-shadow: hsla(245, 75%, 52%, 0.541);
+$very-pblue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+@mixin flexing{
+    display: flex;
+    flex-direction: column;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    font-size: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hot Display', sans-serif;
+    background-color: $very-pblue;
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+//main style
+#container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    #section-container{
+        background: white;
+        min-width: 27%;
+        min-height: 40vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 5px 3px 18px rgba(70, 70, 70, 0.253);
+
+        #hero{
+            background: url('/images/illustration-hero.svg');
+            min-height: 12rem;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        #summary{
+            padding: 0 2rem 2rem 2rem;
+
+            #bigText{
+                font-weight: 900;
+                color: $dark-blue;
+                font-size: 1.6rem;
+                padding-top: 2rem;
+                padding-bottom: 1.5rem;
+            }
+
+            #text{
+                font-size: 1rem;
+                font-weight: 500;
+                padding-bottom: 1.8rem;
+                color: $desaturated-blue;
+                line-height: 1.5rem;
+            }
+
+            #plan{
+                display: flex;
+                margin-bottom: 2rem;
+                align-items: center;
+                background: $very-pblue;
+                padding: 1rem 10px;
+                border-radius: 10px;
+
+                img{
+                    transform: scale(80%);
+                }
+
+                #plan-text-container{
+                    padding-left: 10px;
+                    text-align: left;
+                    line-height: 1.3rem;
+
+                    .the-plan:nth-child(1){
+                        color: $dark-blue;
+                        font-weight: 700;
+                    }
+
+                    .the-plan:nth-child(2){
+                        color: $desaturated-blue;
+                        font-size: .9rem;
+                    }
+                }
+
+                a{
+                    padding-left: 5rem;
+                    font-size: .9rem;
+                    font-weight: bold;
+                    color: $bright-blue;
+                }
+            }
+
+            #btnContainer{
+                @include flexing;
+
+                #proceed{
+                    cursor: pointer;
+                    padding: 10px 0;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: white;
+                    border: none;
+                    background: $bright-blue;
+                    border-radius: 10px;
+                    box-shadow: 3px 5px 10px $bright-blue-shadow;
+
+                    &:hover{
+                        box-shadow: 3px 5px 15px $bright-blue-shadow;
+                        background: hsl(245, 86%, 58%);
+                    }
+                }
+
+                #cancel{
+                    cursor: pointer;
+                    padding: 10px 0;
+                    font-size: 14px;
+                    background: none;
+                    border: none;
+                    margin-top: 5px;
+                    color: $desaturated-blue;
+                    font-weight: bold;
+
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.attribution{
+    margin-top: -2rem;
+}
+
+@media screen and (min-width: 1490px){
+    #container{
+        #section-container{
+            #hero{
+                height: 14.5rem;
+            }
+
+            #summary{
+                #plan{
+                    #change-btn{
+                        margin-left: 8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1800px){
+    #container{
+        #section-container{
+            #hero{
+                height: 17rem;
+            }
+
+            #summary{
+                #plan{
+                    #change-btn{
+                        margin-left: 12rem;
+                    }
+                }
+            }
+        }
+    }
+}
+

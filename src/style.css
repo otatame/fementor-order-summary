@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hot Display', sans-serif;
+  background-color: #f5f7ff;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container #section-container {
+  background: white;
+  min-width: 27%;
+  min-height: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 3px 18px rgba(70, 70, 70, 0.253);
+          box-shadow: 5px 3px 18px rgba(70, 70, 70, 0.253);
+}
+
+#container #section-container #hero {
+  background: url("/images/illustration-hero.svg");
+  min-height: 12rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#container #section-container #summary {
+  padding: 0 2rem 2rem 2rem;
+}
+
+#container #section-container #summary #bigText {
+  font-weight: 900;
+  color: #1f2f56;
+  font-size: 1.6rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+#container #section-container #summary #text {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 1.8rem;
+  color: #7280a7;
+  line-height: 1.5rem;
+}
+
+#container #section-container #summary #plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f7ff;
+  padding: 1rem 10px;
+  border-radius: 10px;
+}
+
+#container #section-container #summary #plan img {
+  -webkit-transform: scale(80%);
+          transform: scale(80%);
+}
+
+#container #section-container #summary #plan #plan-text-container {
+  padding-left: 10px;
+  text-align: left;
+  line-height: 1.3rem;
+}
+
+#container #section-container #summary #plan #plan-text-container .the-plan:nth-child(1) {
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+#container #section-container #summary #plan #plan-text-container .the-plan:nth-child(2) {
+  color: #7280a7;
+  font-size: .9rem;
+}
+
+#container #section-container #summary #plan a {
+  padding-left: 5rem;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #3829e0;
+}
+
+#container #section-container #summary #btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container #section-container #summary #btnContainer #proceed {
+  cursor: pointer;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  background: #3829e0;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 5px 10px rgba(56, 41, 224, 0.541);
+          box-shadow: 3px 5px 10px rgba(56, 41, 224, 0.541);
+}
+
+#container #section-container #summary #btnContainer #proceed:hover {
+  -webkit-box-shadow: 3px 5px 15px rgba(56, 41, 224, 0.541);
+          box-shadow: 3px 5px 15px rgba(56, 41, 224, 0.541);
+  background: #4738f0;
+}
+
+#container #section-container #summary #btnContainer #cancel {
+  cursor: pointer;
+  padding: 10px 0;
+  font-size: 14px;
+  background: none;
+  border: none;
+  margin-top: 5px;
+  color: #7280a7;
+  font-weight: bold;
+}
+
+#container #section-container #summary #btnContainer #cancel:hover {
+  color: black;
+}
+
+.attribution {
+  margin-top: -2rem;
+}
+
+@media screen and (min-width: 1490px) {
+  #container #section-container #hero {
+    height: 14.5rem;
+  }
+  #container #section-container #summary #plan #change-btn {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #container #section-container #hero {
+    height: 17rem;
+  }
+  #container #section-container #summary #plan #change-btn {
+    margin-left: 12rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
