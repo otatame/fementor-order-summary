@@ -174,20 +174,26 @@ body {
 }
 
 @media screen and (min-width: 1490px) {
+  #container #section-container {
+    width: 22%;
+  }
   #container #section-container #hero {
     height: 14.5rem;
   }
   #container #section-container #summary #plan #change-btn {
-    margin-left: 8rem;
+    margin-left: 3rem;
   }
 }
 
 @media screen and (min-width: 1800px) {
+  #container #section-container {
+    width: 24%;
+  }
   #container #section-container #hero {
     height: 17rem;
   }
   #container #section-container #summary #plan #change-btn {
-    margin-left: 12rem;
+    margin-left: 8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

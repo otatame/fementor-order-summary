@@ -162,6 +162,7 @@ body{
 @media screen and (min-width: 1490px){
     #container{
         #section-container{
+            width: 22%;
             #hero{
                 height: 14.5rem;
             }
@@ -169,7 +170,7 @@ body{
             #summary{
                 #plan{
                     #change-btn{
-                        margin-left: 8rem;
+                        margin-left: 3rem;
                     }
                 }
             }
@@ -180,6 +181,7 @@ body{
 @media screen and (min-width: 1800px){
     #container{
         #section-container{
+            width: 24%;
             #hero{
                 height: 17rem;
             }
@@ -187,7 +189,7 @@ body{
             #summary{
                 #plan{
                     #change-btn{
-                        margin-left: 12rem;
+                        margin-left: 8rem;
                     }
                 }
             }
